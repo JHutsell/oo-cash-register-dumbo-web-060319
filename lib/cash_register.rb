@@ -13,7 +13,7 @@ class CashRegister
     # @total += price
     @previous_total = @total  
     quantity.times { @items << title }
-    @total
+    @total += price * quantity
   end
   
   def items 
