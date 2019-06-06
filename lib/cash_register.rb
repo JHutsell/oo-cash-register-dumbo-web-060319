@@ -11,7 +11,7 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
     # @total += price
-    @previous_total = price * quantity 
+    @previous_total = @total  
     quantity.times { @items << title } 
   end
   
